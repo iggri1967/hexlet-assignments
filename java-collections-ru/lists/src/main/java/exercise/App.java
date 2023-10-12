@@ -3,6 +3,8 @@ package exercise;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static java.lang.Character.toLowerCase;
+
 // BEGIN
 public class App{
     public static void main(String[] args){
@@ -17,7 +19,7 @@ public class App{
         letterList.add(letter);
         }
         for (char letter : word.toCharArray()) {
-            if (!letterList.remove(Character.valueOf(letter))) {
+            if (!letterList.remove(toLowerCase(letter))) {
             return false;
             }
         }
